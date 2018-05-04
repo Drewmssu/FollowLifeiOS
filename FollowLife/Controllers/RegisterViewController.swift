@@ -14,7 +14,6 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInLabel: UILabel!
-    @IBOutlet weak var signUpButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +21,6 @@ class RegisterViewController: UIViewController {
         lastNameTextField.setBottomBorder()
         emailTextField.setBottomBorder()
         passwordTextField.setBottomBorder()
-        signUpButton.layer.cornerRadius = 5
 
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(gestureRecognizer:)))
         signInLabel.addGestureRecognizer(tapGestureRecognizer)
