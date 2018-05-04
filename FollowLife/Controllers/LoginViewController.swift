@@ -12,11 +12,14 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var signUpLabel: UILabel!
+    @IBOutlet weak var signInButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTextField.setBottomBorder()
         passwordTextField.setBottomBorder()
+        signInButton.layer.cornerRadius = 5
+    
 
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(gestureRecognizer:)))
         signUpLabel.addGestureRecognizer(tapGestureRecognizer)

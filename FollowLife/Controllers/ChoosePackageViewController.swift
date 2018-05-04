@@ -1,38 +1,39 @@
 //
-//  RegisterViewController.swift
+//  ChoosePackageViewController.swift
 //  FollowLife
 //
-//  Created by Hillari Zorrilla Delgado on 4/23/18.
+//  Created by Hillari Zorrilla Delgado on 4/26/18.
 //  Copyright © 2018 Hillari Zorrilla Delgado. All rights reserved.
 //
 
 import UIKit
 
-class RegisterViewController: UIViewController {
-    @IBOutlet weak var firstNameTextField: UITextField!
-    @IBOutlet weak var lastNameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var signInLabel: UILabel!
-    @IBOutlet weak var signUpButton: UIButton!
+class ChoosePackageViewController: UIViewController {
+    @IBOutlet weak var optionButton: UIButton!
+    @IBOutlet weak var proOptionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstNameTextField.setBottomBorder()
-        lastNameTextField.setBottomBorder()
-        emailTextField.setBottomBorder()
-        passwordTextField.setBottomBorder()
-        signUpButton.layer.cornerRadius = 5
+        let gradient = CAGradientLayer()
+       
+        gradient.frame = view.bounds
+        gradient.colors = [UIColor(red:0.30, green:0.69, blue:0.76, alpha:1.0).cgColor, UIColor(red:0.42, green:0.80, blue:0.99, alpha:1.0).cgColor]
+        
+        self.view.layer.addSublayer(gradient)
+        optionButton.layer.cornerRadius = 5
+        optionButton.layer.borderWidth = 1
+        optionButton.layer.borderColor = UIColor.white.cgColor
 
+        // Do any additional setup after loading the view.
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(gestureRecognizer:)))
-        signInLabel.addGestureRecognizer(tapGestureRecognizer)
+        proOptionLabel.addGestureRecognizer(tapGestureRecognizer)
         
     }
     
     @objc func handleTap(gestureRecognizer: UIGestureRecognizer) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Login") as! LoginViewController
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "secondPlan") as! ChoosePackage2ViewController
         self.present(nextViewController, animated:true, completion:nil)
         
         
@@ -55,5 +56,4 @@ class RegisterViewController: UIViewController {
     */
 
 }
-
 
