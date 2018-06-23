@@ -1,0 +1,1069 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4009375920B9AC6700BF359A /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4009375820B9AC6700BF359A /* Preference.swift */; };
+		4009375A20B9AC6700BF359A /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4009375820B9AC6700BF359A /* Preference.swift */; };
+		4009375B20B9AC6700BF359A /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4009375820B9AC6700BF359A /* Preference.swift */; };
+		4009378A20BC959100BF359A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4009378920BC959100BF359A /* Utils.swift */; };
+		4009378B20BC959100BF359A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4009378920BC959100BF359A /* Utils.swift */; };
+		4009378C20BC959100BF359A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4009378920BC959100BF359A /* Utils.swift */; };
+		40DB0BF420B91CF200A3AB2D /* FollowLifeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DB0BF220B91CF200A3AB2D /* FollowLifeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40DB0C0F20B91D5C00A3AB2D /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFC20B91D5B00A3AB2D /* Membership.swift */; };
+		40DB0C1020B91D5C00A3AB2D /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFD20B91D5B00A3AB2D /* Patient.swift */; };
+		40DB0C1120B91D5C00A3AB2D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFE20B91D5B00A3AB2D /* Device.swift */; };
+		40DB0C1220B91D5C00A3AB2D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFF20B91D5B00A3AB2D /* Item.swift */; };
+		40DB0C1320B91D5C00A3AB2D /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0020B91D5B00A3AB2D /* ItemType.swift */; };
+		40DB0C1420B91D5C00A3AB2D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0120B91D5B00A3AB2D /* User.swift */; };
+		40DB0C1520B91D5C00A3AB2D /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0220B91D5C00A3AB2D /* Address.swift */; };
+		40DB0C1620B91D5C00A3AB2D /* DoctorMedicalSpeciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0320B91D5C00A3AB2D /* DoctorMedicalSpeciality.swift */; };
+		40DB0C1720B91D5C00A3AB2D /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0420B91D5C00A3AB2D /* Indicator.swift */; };
+		40DB0C1820B91D5C00A3AB2D /* IndicatorEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0520B91D5C00A3AB2D /* IndicatorEntry.swift */; };
+		40DB0C1920B91D5C00A3AB2D /* UnitOfMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0620B91D5C00A3AB2D /* UnitOfMeasurement.swift */; };
+		40DB0C1A20B91D5C00A3AB2D /* MedicalSpeciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0720B91D5C00A3AB2D /* MedicalSpeciality.swift */; };
+		40DB0C1B20B91D5C00A3AB2D /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0820B91D5C00A3AB2D /* Appointment.swift */; };
+		40DB0C1C20B91D5C00A3AB2D /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0920B91D5C00A3AB2D /* Plan.swift */; };
+		40DB0C1D20B91D5C00A3AB2D /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0A20B91D5C00A3AB2D /* Role.swift */; };
+		40DB0C1E20B91D5C00A3AB2D /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0B20B91D5C00A3AB2D /* Prescription.swift */; };
+		40DB0C1F20B91D5C00A3AB2D /* IndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0C20B91D5C00A3AB2D /* IndicatorType.swift */; };
+		40DB0C2020B91D5C00A3AB2D /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0D20B91D5C00A3AB2D /* Doctor.swift */; };
+		40DB0C2120B91D5C00A3AB2D /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0E20B91D5C00A3AB2D /* District.swift */; };
+		40DB0C2420B91D7B00A3AB2D /* FollowLifeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C2220B91D7B00A3AB2D /* FollowLifeApi.swift */; };
+		40DB0C2520B91D7B00A3AB2D /* LogoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C2320B91D7B00A3AB2D /* LogoApi.swift */; };
+		40DB0C5920B91DF200A3AB2D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DB0C4B20B91DE800A3AB2D /* Alamofire.framework */; };
+		40DB0C5A20B91DF800A3AB2D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DB0C3220B91DE300A3AB2D /* SwiftyJSON.framework */; };
+		40DB0C6420B91E9A00A3AB2D /* FollowLifeWatchFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DB0C6220B91E9A00A3AB2D /* FollowLifeWatchFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40DB0C7120B91EBF00A3AB2D /* FollowLifeTVFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DB0C6F20B91EBF00A3AB2D /* FollowLifeTVFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40DB0C7520B91ED600A3AB2D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DB0C5720B91DE800A3AB2D /* Alamofire.framework */; };
+		40DB0C7620B91EDC00A3AB2D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DB0C3A20B91DE300A3AB2D /* SwiftyJSON.framework */; };
+		40DB0C7720B91EE300A3AB2D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DB0C5320B91DE800A3AB2D /* Alamofire.framework */; };
+		40DB0C7820B91EE700A3AB2D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DB0C3C20B91DE300A3AB2D /* SwiftyJSON.framework */; };
+		40DB0C7920B91EEB00A3AB2D /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0220B91D5C00A3AB2D /* Address.swift */; };
+		40DB0C7A20B91EEC00A3AB2D /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0220B91D5C00A3AB2D /* Address.swift */; };
+		40DB0C7C20B91EFF00A3AB2D /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0820B91D5C00A3AB2D /* Appointment.swift */; };
+		40DB0C7D20B91EFF00A3AB2D /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0820B91D5C00A3AB2D /* Appointment.swift */; };
+		40DB0C7E20B91F0400A3AB2D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFE20B91D5B00A3AB2D /* Device.swift */; };
+		40DB0C7F20B91F0400A3AB2D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFE20B91D5B00A3AB2D /* Device.swift */; };
+		40DB0C8020B91F0A00A3AB2D /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0E20B91D5C00A3AB2D /* District.swift */; };
+		40DB0C8120B91F0B00A3AB2D /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0E20B91D5C00A3AB2D /* District.swift */; };
+		40DB0C8220B91F0F00A3AB2D /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0D20B91D5C00A3AB2D /* Doctor.swift */; };
+		40DB0C8320B91F1000A3AB2D /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0D20B91D5C00A3AB2D /* Doctor.swift */; };
+		40DB0C8420B91F1500A3AB2D /* DoctorMedicalSpeciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0320B91D5C00A3AB2D /* DoctorMedicalSpeciality.swift */; };
+		40DB0C8520B91F1500A3AB2D /* DoctorMedicalSpeciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0320B91D5C00A3AB2D /* DoctorMedicalSpeciality.swift */; };
+		40DB0C8620B91F1B00A3AB2D /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0420B91D5C00A3AB2D /* Indicator.swift */; };
+		40DB0C8720B91F1B00A3AB2D /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0420B91D5C00A3AB2D /* Indicator.swift */; };
+		40DB0C8820B91F1F00A3AB2D /* IndicatorEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0520B91D5C00A3AB2D /* IndicatorEntry.swift */; };
+		40DB0C8920B91F2000A3AB2D /* IndicatorEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0520B91D5C00A3AB2D /* IndicatorEntry.swift */; };
+		40DB0C8A20B91F2400A3AB2D /* IndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0C20B91D5C00A3AB2D /* IndicatorType.swift */; };
+		40DB0C8B20B91F2500A3AB2D /* IndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0C20B91D5C00A3AB2D /* IndicatorType.swift */; };
+		40DB0C8C20B91F2900A3AB2D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFF20B91D5B00A3AB2D /* Item.swift */; };
+		40DB0C8D20B91F2900A3AB2D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFF20B91D5B00A3AB2D /* Item.swift */; };
+		40DB0C8E20B91F2D00A3AB2D /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0020B91D5B00A3AB2D /* ItemType.swift */; };
+		40DB0C8F20B91F2E00A3AB2D /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0020B91D5B00A3AB2D /* ItemType.swift */; };
+		40DB0C9020B91F3200A3AB2D /* MedicalSpeciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0720B91D5C00A3AB2D /* MedicalSpeciality.swift */; };
+		40DB0C9120B91F3300A3AB2D /* MedicalSpeciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0720B91D5C00A3AB2D /* MedicalSpeciality.swift */; };
+		40DB0C9220B91F3800A3AB2D /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFC20B91D5B00A3AB2D /* Membership.swift */; };
+		40DB0C9320B91F3800A3AB2D /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFC20B91D5B00A3AB2D /* Membership.swift */; };
+		40DB0C9420B91F3E00A3AB2D /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFD20B91D5B00A3AB2D /* Patient.swift */; };
+		40DB0C9520B91F3E00A3AB2D /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0BFD20B91D5B00A3AB2D /* Patient.swift */; };
+		40DB0C9620B91F4300A3AB2D /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0920B91D5C00A3AB2D /* Plan.swift */; };
+		40DB0C9720B91F4400A3AB2D /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0920B91D5C00A3AB2D /* Plan.swift */; };
+		40DB0C9820B91F4800A3AB2D /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0B20B91D5C00A3AB2D /* Prescription.swift */; };
+		40DB0C9920B91F4900A3AB2D /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0B20B91D5C00A3AB2D /* Prescription.swift */; };
+		40DB0C9A20B91F4D00A3AB2D /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0A20B91D5C00A3AB2D /* Role.swift */; };
+		40DB0C9B20B91F4E00A3AB2D /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0A20B91D5C00A3AB2D /* Role.swift */; };
+		40DB0C9C20B91F5200A3AB2D /* UnitOfMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0620B91D5C00A3AB2D /* UnitOfMeasurement.swift */; };
+		40DB0C9D20B91F5300A3AB2D /* UnitOfMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0620B91D5C00A3AB2D /* UnitOfMeasurement.swift */; };
+		40DB0C9E20B91F5700A3AB2D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0120B91D5B00A3AB2D /* User.swift */; };
+		40DB0C9F20B91F5800A3AB2D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C0120B91D5B00A3AB2D /* User.swift */; };
+		40DB0CA020B91F5C00A3AB2D /* FollowLifeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C2220B91D7B00A3AB2D /* FollowLifeApi.swift */; };
+		40DB0CA120B91F5C00A3AB2D /* FollowLifeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C2220B91D7B00A3AB2D /* FollowLifeApi.swift */; };
+		40DB0CA220B91F6000A3AB2D /* LogoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C2320B91D7B00A3AB2D /* LogoApi.swift */; };
+		40DB0CA320B91F6100A3AB2D /* LogoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB0C2320B91D7B00A3AB2D /* LogoApi.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40DB0C3120B91DE300A3AB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB0C2620B91DE300A3AB2D /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		40DB0C3320B91DE300A3AB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB0C2620B91DE300A3AB2D /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = "SwiftyJSON iOS Tests";
+		};
+		40DB0C3520B91DE300A3AB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB0C2620B91DE300A3AB2D /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON macOS";
+		};
+		40DB0C3720B91DE300A3AB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB0C2620B91DE300A3AB2D /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON macOS Tests";
+		};
+		40DB0C3920B91DE300A3AB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB0C2620B91DE300A3AB2D /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4D7CCE81B9465A700EE7221;
+			remoteInfo = "SwiftyJSON watchOS";
+		};
+		40DB0C3B20B91DE300A3AB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB0C2620B91DE300A3AB2D /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7236B4F61BAC14150020529B;
+			remoteInfo = "SwiftyJSON tvOS";
+		};
+		40DB0C3D20B91DE300A3AB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB0C2620B91DE300A3AB2D /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
+			remoteInfo = "SwiftyJSON tvOS Tests";
+		};
+		40DB0C4A20B91DE800A3AB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB0C3F20B91DE800A3AB2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		40DB0C4C20B91DE800A3AB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB0C3F20B91DE800A3AB2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		40DB0C4E20B91DE800A3AB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB0C3F20B91DE800A3AB2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		40DB0C5020B91DE800A3AB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB0C3F20B91DE800A3AB2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		40DB0C5220B91DE800A3AB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB0C3F20B91DE800A3AB2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		40DB0C5420B91DE800A3AB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB0C3F20B91DE800A3AB2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		40DB0C5620B91DE800A3AB2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB0C3F20B91DE800A3AB2D /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4009375820B9AC6700BF359A /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
+		4009378920BC959100BF359A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		40DB0BEF20B91CF200A3AB2D /* FollowLifeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FollowLifeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DB0BF220B91CF200A3AB2D /* FollowLifeFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowLifeFramework.h; sourceTree = "<group>"; };
+		40DB0BF320B91CF200A3AB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40DB0BFC20B91D5B00A3AB2D /* Membership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Membership.swift; sourceTree = "<group>"; };
+		40DB0BFD20B91D5B00A3AB2D /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		40DB0BFE20B91D5B00A3AB2D /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		40DB0BFF20B91D5B00A3AB2D /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		40DB0C0020B91D5B00A3AB2D /* ItemType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
+		40DB0C0120B91D5B00A3AB2D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		40DB0C0220B91D5C00A3AB2D /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		40DB0C0320B91D5C00A3AB2D /* DoctorMedicalSpeciality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorMedicalSpeciality.swift; sourceTree = "<group>"; };
+		40DB0C0420B91D5C00A3AB2D /* Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		40DB0C0520B91D5C00A3AB2D /* IndicatorEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorEntry.swift; sourceTree = "<group>"; };
+		40DB0C0620B91D5C00A3AB2D /* UnitOfMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitOfMeasurement.swift; sourceTree = "<group>"; };
+		40DB0C0720B91D5C00A3AB2D /* MedicalSpeciality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalSpeciality.swift; sourceTree = "<group>"; };
+		40DB0C0820B91D5C00A3AB2D /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		40DB0C0920B91D5C00A3AB2D /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		40DB0C0A20B91D5C00A3AB2D /* Role.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		40DB0C0B20B91D5C00A3AB2D /* Prescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
+		40DB0C0C20B91D5C00A3AB2D /* IndicatorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorType.swift; sourceTree = "<group>"; };
+		40DB0C0D20B91D5C00A3AB2D /* Doctor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		40DB0C0E20B91D5C00A3AB2D /* District.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
+		40DB0C2220B91D7B00A3AB2D /* FollowLifeApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowLifeApi.swift; sourceTree = "<group>"; };
+		40DB0C2320B91D7B00A3AB2D /* LogoApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoApi.swift; sourceTree = "<group>"; };
+		40DB0C2620B91DE300A3AB2D /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
+		40DB0C3F20B91DE800A3AB2D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		40DB0C6020B91E9A00A3AB2D /* FollowLifeWatchFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FollowLifeWatchFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DB0C6220B91E9A00A3AB2D /* FollowLifeWatchFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowLifeWatchFramework.h; sourceTree = "<group>"; };
+		40DB0C6320B91E9A00A3AB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40DB0C6D20B91EBF00A3AB2D /* FollowLifeTVFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FollowLifeTVFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DB0C6F20B91EBF00A3AB2D /* FollowLifeTVFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowLifeTVFramework.h; sourceTree = "<group>"; };
+		40DB0C7020B91EBF00A3AB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40DB0BEB20B91CF200A3AB2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB0C5A20B91DF800A3AB2D /* SwiftyJSON.framework in Frameworks */,
+				40DB0C5920B91DF200A3AB2D /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DB0C5C20B91E9A00A3AB2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB0C7620B91EDC00A3AB2D /* SwiftyJSON.framework in Frameworks */,
+				40DB0C7520B91ED600A3AB2D /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DB0C6920B91EBF00A3AB2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB0C7820B91EE700A3AB2D /* SwiftyJSON.framework in Frameworks */,
+				40DB0C7720B91EE300A3AB2D /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4009374720B9AC0E00BF359A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4009375820B9AC6700BF359A /* Preference.swift */,
+				4009378920BC959100BF359A /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		40DB0BE520B91CF200A3AB2D = {
+			isa = PBXGroup;
+			children = (
+				40DB0C3F20B91DE800A3AB2D /* Alamofire.xcodeproj */,
+				40DB0C2620B91DE300A3AB2D /* SwiftyJSON.xcodeproj */,
+				40DB0BF120B91CF200A3AB2D /* FollowLifeFramework */,
+				40DB0C6120B91E9A00A3AB2D /* FollowLifeWatchFramework */,
+				40DB0C6E20B91EBF00A3AB2D /* FollowLifeTVFramework */,
+				40DB0BF020B91CF200A3AB2D /* Products */,
+				40DB0C5820B91DF200A3AB2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		40DB0BF020B91CF200A3AB2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40DB0BEF20B91CF200A3AB2D /* FollowLifeFramework.framework */,
+				40DB0C6020B91E9A00A3AB2D /* FollowLifeWatchFramework.framework */,
+				40DB0C6D20B91EBF00A3AB2D /* FollowLifeTVFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40DB0BF120B91CF200A3AB2D /* FollowLifeFramework */ = {
+			isa = PBXGroup;
+			children = (
+				4009374720B9AC0E00BF359A /* Utils */,
+				40DB0BFB20B91D3800A3AB2D /* Model */,
+				40DB0BFA20B91D3100A3AB2D /* Network */,
+				40DB0BF220B91CF200A3AB2D /* FollowLifeFramework.h */,
+				40DB0BF320B91CF200A3AB2D /* Info.plist */,
+			);
+			path = FollowLifeFramework;
+			sourceTree = "<group>";
+		};
+		40DB0BFA20B91D3100A3AB2D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				40DB0C2220B91D7B00A3AB2D /* FollowLifeApi.swift */,
+				40DB0C2320B91D7B00A3AB2D /* LogoApi.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		40DB0BFB20B91D3800A3AB2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40DB0C0220B91D5C00A3AB2D /* Address.swift */,
+				40DB0C0820B91D5C00A3AB2D /* Appointment.swift */,
+				40DB0BFE20B91D5B00A3AB2D /* Device.swift */,
+				40DB0C0E20B91D5C00A3AB2D /* District.swift */,
+				40DB0C0D20B91D5C00A3AB2D /* Doctor.swift */,
+				40DB0C0320B91D5C00A3AB2D /* DoctorMedicalSpeciality.swift */,
+				40DB0C0420B91D5C00A3AB2D /* Indicator.swift */,
+				40DB0C0520B91D5C00A3AB2D /* IndicatorEntry.swift */,
+				40DB0C0C20B91D5C00A3AB2D /* IndicatorType.swift */,
+				40DB0BFF20B91D5B00A3AB2D /* Item.swift */,
+				40DB0C0020B91D5B00A3AB2D /* ItemType.swift */,
+				40DB0C0720B91D5C00A3AB2D /* MedicalSpeciality.swift */,
+				40DB0BFC20B91D5B00A3AB2D /* Membership.swift */,
+				40DB0BFD20B91D5B00A3AB2D /* Patient.swift */,
+				40DB0C0920B91D5C00A3AB2D /* Plan.swift */,
+				40DB0C0B20B91D5C00A3AB2D /* Prescription.swift */,
+				40DB0C0A20B91D5C00A3AB2D /* Role.swift */,
+				40DB0C0620B91D5C00A3AB2D /* UnitOfMeasurement.swift */,
+				40DB0C0120B91D5B00A3AB2D /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40DB0C2720B91DE300A3AB2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40DB0C3220B91DE300A3AB2D /* SwiftyJSON.framework */,
+				40DB0C3420B91DE300A3AB2D /* SwiftyJSON iOS Tests.xctest */,
+				40DB0C3620B91DE300A3AB2D /* SwiftyJSON.framework */,
+				40DB0C3820B91DE300A3AB2D /* SwiftyJSON macOS Tests.xctest */,
+				40DB0C3A20B91DE300A3AB2D /* SwiftyJSON.framework */,
+				40DB0C3C20B91DE300A3AB2D /* SwiftyJSON.framework */,
+				40DB0C3E20B91DE300A3AB2D /* SwiftyJSON tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40DB0C4020B91DE800A3AB2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40DB0C4B20B91DE800A3AB2D /* Alamofire.framework */,
+				40DB0C4D20B91DE800A3AB2D /* Alamofire iOS Tests.xctest */,
+				40DB0C4F20B91DE800A3AB2D /* Alamofire.framework */,
+				40DB0C5120B91DE800A3AB2D /* Alamofire macOS Tests.xctest */,
+				40DB0C5320B91DE800A3AB2D /* Alamofire.framework */,
+				40DB0C5520B91DE800A3AB2D /* Alamofire tvOS Tests.xctest */,
+				40DB0C5720B91DE800A3AB2D /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40DB0C5820B91DF200A3AB2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40DB0C6120B91E9A00A3AB2D /* FollowLifeWatchFramework */ = {
+			isa = PBXGroup;
+			children = (
+				40DB0C6220B91E9A00A3AB2D /* FollowLifeWatchFramework.h */,
+				40DB0C6320B91E9A00A3AB2D /* Info.plist */,
+			);
+			path = FollowLifeWatchFramework;
+			sourceTree = "<group>";
+		};
+		40DB0C6E20B91EBF00A3AB2D /* FollowLifeTVFramework */ = {
+			isa = PBXGroup;
+			children = (
+				40DB0C6F20B91EBF00A3AB2D /* FollowLifeTVFramework.h */,
+				40DB0C7020B91EBF00A3AB2D /* Info.plist */,
+			);
+			path = FollowLifeTVFramework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		40DB0BEC20B91CF200A3AB2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB0BF420B91CF200A3AB2D /* FollowLifeFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DB0C5D20B91E9A00A3AB2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB0C6420B91E9A00A3AB2D /* FollowLifeWatchFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DB0C6A20B91EBF00A3AB2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB0C7120B91EBF00A3AB2D /* FollowLifeTVFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		40DB0BEE20B91CF200A3AB2D /* FollowLifeFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DB0BF720B91CF200A3AB2D /* Build configuration list for PBXNativeTarget "FollowLifeFramework" */;
+			buildPhases = (
+				40DB0BEA20B91CF200A3AB2D /* Sources */,
+				40DB0BEB20B91CF200A3AB2D /* Frameworks */,
+				40DB0BEC20B91CF200A3AB2D /* Headers */,
+				40DB0BED20B91CF200A3AB2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FollowLifeFramework;
+			productName = FollowLifeFramework;
+			productReference = 40DB0BEF20B91CF200A3AB2D /* FollowLifeFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		40DB0C5F20B91E9A00A3AB2D /* FollowLifeWatchFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DB0C6520B91E9A00A3AB2D /* Build configuration list for PBXNativeTarget "FollowLifeWatchFramework" */;
+			buildPhases = (
+				40DB0C5B20B91E9A00A3AB2D /* Sources */,
+				40DB0C5C20B91E9A00A3AB2D /* Frameworks */,
+				40DB0C5D20B91E9A00A3AB2D /* Headers */,
+				40DB0C5E20B91E9A00A3AB2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FollowLifeWatchFramework;
+			productName = FollowLifeWatchFramework;
+			productReference = 40DB0C6020B91E9A00A3AB2D /* FollowLifeWatchFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		40DB0C6C20B91EBF00A3AB2D /* FollowLifeTVFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DB0C7220B91EBF00A3AB2D /* Build configuration list for PBXNativeTarget "FollowLifeTVFramework" */;
+			buildPhases = (
+				40DB0C6820B91EBF00A3AB2D /* Sources */,
+				40DB0C6920B91EBF00A3AB2D /* Frameworks */,
+				40DB0C6A20B91EBF00A3AB2D /* Headers */,
+				40DB0C6B20B91EBF00A3AB2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FollowLifeTVFramework;
+			productName = FollowLifeTVFramework;
+			productReference = 40DB0C6D20B91EBF00A3AB2D /* FollowLifeTVFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40DB0BE620B91CF200A3AB2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = UPC;
+				TargetAttributes = {
+					40DB0BEE20B91CF200A3AB2D = {
+						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
+					};
+					40DB0C5F20B91E9A00A3AB2D = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					40DB0C6C20B91EBF00A3AB2D = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 40DB0BE920B91CF200A3AB2D /* Build configuration list for PBXProject "FollowLifeFramework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 40DB0BE520B91CF200A3AB2D;
+			productRefGroup = 40DB0BF020B91CF200A3AB2D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 40DB0C4020B91DE800A3AB2D /* Products */;
+					ProjectRef = 40DB0C3F20B91DE800A3AB2D /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 40DB0C2720B91DE300A3AB2D /* Products */;
+					ProjectRef = 40DB0C2620B91DE300A3AB2D /* SwiftyJSON.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				40DB0BEE20B91CF200A3AB2D /* FollowLifeFramework */,
+				40DB0C5F20B91E9A00A3AB2D /* FollowLifeWatchFramework */,
+				40DB0C6C20B91EBF00A3AB2D /* FollowLifeTVFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		40DB0C3220B91DE300A3AB2D /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 40DB0C3120B91DE300A3AB2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DB0C3420B91DE300A3AB2D /* SwiftyJSON iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON iOS Tests.xctest";
+			remoteRef = 40DB0C3320B91DE300A3AB2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DB0C3620B91DE300A3AB2D /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 40DB0C3520B91DE300A3AB2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DB0C3820B91DE300A3AB2D /* SwiftyJSON macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON macOS Tests.xctest";
+			remoteRef = 40DB0C3720B91DE300A3AB2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DB0C3A20B91DE300A3AB2D /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 40DB0C3920B91DE300A3AB2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DB0C3C20B91DE300A3AB2D /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 40DB0C3B20B91DE300A3AB2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DB0C3E20B91DE300A3AB2D /* SwiftyJSON tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON tvOS Tests.xctest";
+			remoteRef = 40DB0C3D20B91DE300A3AB2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DB0C4B20B91DE800A3AB2D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 40DB0C4A20B91DE800A3AB2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DB0C4D20B91DE800A3AB2D /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 40DB0C4C20B91DE800A3AB2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DB0C4F20B91DE800A3AB2D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 40DB0C4E20B91DE800A3AB2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DB0C5120B91DE800A3AB2D /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 40DB0C5020B91DE800A3AB2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DB0C5320B91DE800A3AB2D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 40DB0C5220B91DE800A3AB2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DB0C5520B91DE800A3AB2D /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 40DB0C5420B91DE800A3AB2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DB0C5720B91DE800A3AB2D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 40DB0C5620B91DE800A3AB2D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40DB0BED20B91CF200A3AB2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DB0C5E20B91E9A00A3AB2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DB0C6B20B91EBF00A3AB2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40DB0BEA20B91CF200A3AB2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB0C1B20B91D5C00A3AB2D /* Appointment.swift in Sources */,
+				40DB0C1220B91D5C00A3AB2D /* Item.swift in Sources */,
+				40DB0C1C20B91D5C00A3AB2D /* Plan.swift in Sources */,
+				40DB0C2120B91D5C00A3AB2D /* District.swift in Sources */,
+				40DB0C1620B91D5C00A3AB2D /* DoctorMedicalSpeciality.swift in Sources */,
+				40DB0C1120B91D5C00A3AB2D /* Device.swift in Sources */,
+				40DB0C1420B91D5C00A3AB2D /* User.swift in Sources */,
+				40DB0C1A20B91D5C00A3AB2D /* MedicalSpeciality.swift in Sources */,
+				40DB0C1F20B91D5C00A3AB2D /* IndicatorType.swift in Sources */,
+				4009375920B9AC6700BF359A /* Preference.swift in Sources */,
+				40DB0C1320B91D5C00A3AB2D /* ItemType.swift in Sources */,
+				40DB0C0F20B91D5C00A3AB2D /* Membership.swift in Sources */,
+				40DB0C1920B91D5C00A3AB2D /* UnitOfMeasurement.swift in Sources */,
+				40DB0C1820B91D5C00A3AB2D /* IndicatorEntry.swift in Sources */,
+				40DB0C1020B91D5C00A3AB2D /* Patient.swift in Sources */,
+				4009378A20BC959100BF359A /* Utils.swift in Sources */,
+				40DB0C1720B91D5C00A3AB2D /* Indicator.swift in Sources */,
+				40DB0C2520B91D7B00A3AB2D /* LogoApi.swift in Sources */,
+				40DB0C2020B91D5C00A3AB2D /* Doctor.swift in Sources */,
+				40DB0C1520B91D5C00A3AB2D /* Address.swift in Sources */,
+				40DB0C1D20B91D5C00A3AB2D /* Role.swift in Sources */,
+				40DB0C1E20B91D5C00A3AB2D /* Prescription.swift in Sources */,
+				40DB0C2420B91D7B00A3AB2D /* FollowLifeApi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DB0C5B20B91E9A00A3AB2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB0C8C20B91F2900A3AB2D /* Item.swift in Sources */,
+				40DB0C8A20B91F2400A3AB2D /* IndicatorType.swift in Sources */,
+				40DB0C9A20B91F4D00A3AB2D /* Role.swift in Sources */,
+				40DB0C9C20B91F5200A3AB2D /* UnitOfMeasurement.swift in Sources */,
+				40DB0C7E20B91F0400A3AB2D /* Device.swift in Sources */,
+				40DB0C8620B91F1B00A3AB2D /* Indicator.swift in Sources */,
+				40DB0C9020B91F3200A3AB2D /* MedicalSpeciality.swift in Sources */,
+				40DB0C8220B91F0F00A3AB2D /* Doctor.swift in Sources */,
+				40DB0C9220B91F3800A3AB2D /* Membership.swift in Sources */,
+				4009375A20B9AC6700BF359A /* Preference.swift in Sources */,
+				40DB0C7920B91EEB00A3AB2D /* Address.swift in Sources */,
+				40DB0C8E20B91F2D00A3AB2D /* ItemType.swift in Sources */,
+				40DB0C8420B91F1500A3AB2D /* DoctorMedicalSpeciality.swift in Sources */,
+				40DB0C7C20B91EFF00A3AB2D /* Appointment.swift in Sources */,
+				40DB0C9420B91F3E00A3AB2D /* Patient.swift in Sources */,
+				4009378B20BC959100BF359A /* Utils.swift in Sources */,
+				40DB0C8820B91F1F00A3AB2D /* IndicatorEntry.swift in Sources */,
+				40DB0CA220B91F6000A3AB2D /* LogoApi.swift in Sources */,
+				40DB0C8020B91F0A00A3AB2D /* District.swift in Sources */,
+				40DB0C9620B91F4300A3AB2D /* Plan.swift in Sources */,
+				40DB0C9820B91F4800A3AB2D /* Prescription.swift in Sources */,
+				40DB0C9E20B91F5700A3AB2D /* User.swift in Sources */,
+				40DB0CA020B91F5C00A3AB2D /* FollowLifeApi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DB0C6820B91EBF00A3AB2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB0C8D20B91F2900A3AB2D /* Item.swift in Sources */,
+				40DB0C8B20B91F2500A3AB2D /* IndicatorType.swift in Sources */,
+				40DB0C9B20B91F4E00A3AB2D /* Role.swift in Sources */,
+				40DB0C9D20B91F5300A3AB2D /* UnitOfMeasurement.swift in Sources */,
+				40DB0C7F20B91F0400A3AB2D /* Device.swift in Sources */,
+				40DB0C8720B91F1B00A3AB2D /* Indicator.swift in Sources */,
+				40DB0C9120B91F3300A3AB2D /* MedicalSpeciality.swift in Sources */,
+				40DB0C8320B91F1000A3AB2D /* Doctor.swift in Sources */,
+				40DB0C9320B91F3800A3AB2D /* Membership.swift in Sources */,
+				4009375B20B9AC6700BF359A /* Preference.swift in Sources */,
+				40DB0C7A20B91EEC00A3AB2D /* Address.swift in Sources */,
+				40DB0C8F20B91F2E00A3AB2D /* ItemType.swift in Sources */,
+				40DB0C8520B91F1500A3AB2D /* DoctorMedicalSpeciality.swift in Sources */,
+				40DB0C7D20B91EFF00A3AB2D /* Appointment.swift in Sources */,
+				40DB0C9520B91F3E00A3AB2D /* Patient.swift in Sources */,
+				4009378C20BC959100BF359A /* Utils.swift in Sources */,
+				40DB0C8920B91F2000A3AB2D /* IndicatorEntry.swift in Sources */,
+				40DB0CA320B91F6100A3AB2D /* LogoApi.swift in Sources */,
+				40DB0C8120B91F0B00A3AB2D /* District.swift in Sources */,
+				40DB0C9720B91F4400A3AB2D /* Plan.swift in Sources */,
+				40DB0C9920B91F4900A3AB2D /* Prescription.swift in Sources */,
+				40DB0C9F20B91F5800A3AB2D /* User.swift in Sources */,
+				40DB0CA120B91F5C00A3AB2D /* FollowLifeApi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		40DB0BF520B91CF200A3AB2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		40DB0BF620B91CF200A3AB2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		40DB0BF820B91CF200A3AB2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TQ4Y5Q73BC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FollowLifeFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.FollowLifeFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40DB0BF920B91CF200A3AB2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TQ4Y5Q73BC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FollowLifeFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.FollowLifeFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40DB0C6620B91E9A00A3AB2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TQ4Y5Q73BC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FollowLifeWatchFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.FollowLifeWatchFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		40DB0C6720B91E9A00A3AB2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TQ4Y5Q73BC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FollowLifeWatchFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.FollowLifeWatchFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		40DB0C7320B91EBF00A3AB2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TQ4Y5Q73BC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FollowLifeTVFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.FollowLifeTVFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+			};
+			name = Debug;
+		};
+		40DB0C7420B91EBF00A3AB2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TQ4Y5Q73BC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FollowLifeTVFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.FollowLifeTVFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40DB0BE920B91CF200A3AB2D /* Build configuration list for PBXProject "FollowLifeFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DB0BF520B91CF200A3AB2D /* Debug */,
+				40DB0BF620B91CF200A3AB2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40DB0BF720B91CF200A3AB2D /* Build configuration list for PBXNativeTarget "FollowLifeFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DB0BF820B91CF200A3AB2D /* Debug */,
+				40DB0BF920B91CF200A3AB2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40DB0C6520B91E9A00A3AB2D /* Build configuration list for PBXNativeTarget "FollowLifeWatchFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DB0C6620B91E9A00A3AB2D /* Debug */,
+				40DB0C6720B91E9A00A3AB2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40DB0C7220B91EBF00A3AB2D /* Build configuration list for PBXNativeTarget "FollowLifeTVFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DB0C7320B91EBF00A3AB2D /* Debug */,
+				40DB0C7420B91EBF00A3AB2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40DB0BE620B91CF200A3AB2D /* Project object */;
+}
