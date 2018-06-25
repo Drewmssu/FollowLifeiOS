@@ -23,11 +23,6 @@ class CalendarTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func addAppointmentButton(_ sender: UIBarButtonItem) {
-        
-    }
-    
 
     // MARK: - Table view data source
 
