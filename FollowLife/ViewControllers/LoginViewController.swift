@@ -84,9 +84,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signUpAction(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "showRegisterScene", sender: self)
+        //self.performSegue(withIdentifier: "showRegisterScene", sender: self)
     }
     
+    @IBAction func unwindToLogin(segue:UIStoryboardSegue) { }
    
 }
 

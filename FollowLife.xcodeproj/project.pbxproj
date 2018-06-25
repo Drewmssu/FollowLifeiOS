@@ -19,7 +19,6 @@
 		28E43412208D35A700B2EBAC /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E43411208D35A700B2EBAC /* LoginModel.swift */; };
 		4000D91A20B7056E0061BBC9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D90B20B7056D0061BBC9 /* ProfileViewController.swift */; };
 		4000D91C20B7056E0061BBC9 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D90D20B7056D0061BBC9 /* RegisterViewController.swift */; };
-		4000D91E20B7056E0061BBC9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D90F20B7056D0061BBC9 /* HomeViewController.swift */; };
 		4000D92020B7056E0061BBC9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D91120B7056D0061BBC9 /* LoginViewController.swift */; };
 		4000D92220B7056E0061BBC9 /* ChooseRoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D91320B7056E0061BBC9 /* ChooseRoleViewController.swift */; };
 		4000D92320B7056E0061BBC9 /* CalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000D91420B7056E0061BBC9 /* CalendarTableViewController.swift */; };
@@ -225,7 +224,6 @@
 		28E43411208D35A700B2EBAC /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		4000D90B20B7056D0061BBC9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4000D90D20B7056D0061BBC9 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		4000D90F20B7056D0061BBC9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4000D91120B7056D0061BBC9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4000D91320B7056E0061BBC9 /* ChooseRoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseRoleViewController.swift; sourceTree = "<group>"; };
 		4000D91420B7056E0061BBC9 /* CalendarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarTableViewController.swift; sourceTree = "<group>"; };
@@ -354,7 +352,6 @@
 				4000D91720B7056E0061BBC9 /* CalendarViewController.swift */,
 				4000D91320B7056E0061BBC9 /* ChooseRoleViewController.swift */,
 				4000D91420B7056E0061BBC9 /* CalendarTableViewController.swift */,
-				4000D90F20B7056D0061BBC9 /* HomeViewController.swift */,
 				4000D90B20B7056D0061BBC9 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
@@ -688,7 +685,6 @@
 				28E433DF208D234F00B2EBAC /* FollowLife.xcdatamodeld in Sources */,
 				28D189CA20DCD796006716FB /* ProfileViewModel.swift in Sources */,
 				4000D91A20B7056E0061BBC9 /* ProfileViewController.swift in Sources */,
-				4000D91E20B7056E0061BBC9 /* HomeViewController.swift in Sources */,
 				4000D92020B7056E0061BBC9 /* LoginViewController.swift in Sources */,
 				28E4340E208D34AD00B2EBAC /* LoginViewModel.swift in Sources */,
 			);

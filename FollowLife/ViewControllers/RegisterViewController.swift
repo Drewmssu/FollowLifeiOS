@@ -26,7 +26,7 @@ class RegisterViewController: UIViewController {
         passwordTextField.setBottomBorder()
         signUpButton.layer.cornerRadius = 5
         
-        self.firstNameTextField.delegate = self as! UITextFieldDelegate
+        self.firstNameTextField.delegate = self
         self.lastNameTextField.delegate = self
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
@@ -59,10 +59,22 @@ class RegisterViewController: UIViewController {
                 
                 
                 if statusCode == 200 {
-                        print(jsonObject)
+                   // Preference.saveData(key: "token", value: jsonObject["Result"]["SessionToken"].stringValue)
+                    let fullName = firstname + " " + lastname
+                    //Preference.saveData(key: "idPatient", value: jsonObject["Result"]["Id"].stringValue)
+                    Preference.saveData(key: "fullName", value: fullName)
+                    Preference.saveData(key: "email", value: email)
                     
+                    
+                        //print(jsonObject)
+                      // self.performSegue(withIdentifier: "showHomeScene", sender: self)
+                    
+                } else if statusCode == 400 {
+                    let incorrectCredentialAlert = UIAlertController(title: "Existing User", message: jsonObject["Message"].stringValue, preferredStyle: UIAlertControllerStyle.alert)
+                    incorrectCredentialAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(incorrectCredentialAlert, animated: true, completion: nil)
                 } else {
-                    let problemAlert = UIAlertController(title: "We had a problem", message: "We had some technical probles. Please, try again in a few minutes.", preferredStyle: UIAlertControllerStyle.alert)
+                    let problemAlert = UIAlertController(title: "We had a problem", message: "We had some technical problems. Please, try again in a few minutes.", preferredStyle: UIAlertControllerStyle.alert)
                     problemAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
                     self.present(problemAlert, animated: true, completion: nil)
                 }
@@ -76,7 +88,7 @@ class RegisterViewController: UIViewController {
     }
 
     func showErrorMessage() {
-        let problemAlert = UIAlertController(title: "We had a problem", message: "Complete all the fields to proceed .", preferredStyle: UIAlertControllerStyle.alert)
+        let problemAlert = UIAlertController(title: "We had a problem", message: "Complete all the fields to proceed.", preferredStyle: UIAlertControllerStyle.alert)
         problemAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         self.present(problemAlert, animated: true, completion: nil)
     }

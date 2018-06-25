@@ -270,7 +270,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="PEk-uq-JUK"/>
                                         </constraints>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -297,7 +297,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKe-7l-Qau">
                                         <rect key="frame" x="0.0" y="199.5" width="66" height="16.5"/>
@@ -320,9 +320,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="4DF-xO-R17"/>
                                         </constraints>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -355,6 +355,7 @@
                                         </state>
                                         <connections>
                                             <action selector="signUpAction:" destination="1es-D0-feu" eventType="touchUpInside" id="Aoq-TE-jaq"/>
+                                            <segue destination="0Cl-2B-leq" kind="presentation" id="5x1-iB-QME"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uaj-Hl-BiO">
@@ -410,13 +411,12 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="LastNameTextField" destination="iqp-xp-ns3" id="fZ7-bI-ymc"/>
                         <outlet property="alreadyHaveAnAccountButton" destination="Uaj-Hl-BiO" id="C6Q-jg-ndz"/>
                         <outlet property="emailTextField" destination="XHQ-Ch-Fct" id="hPx-4W-QuY"/>
                         <outlet property="firstNameTextField" destination="P1L-FW-fhb" id="rgm-nd-nYt"/>
                         <outlet property="lastNameTextField" destination="iqp-xp-ns3" id="mH0-kC-Yag"/>
                         <outlet property="passwordTextField" destination="oP5-Pi-EPK" id="YTu-kA-xLV"/>
-                        <outlet property="signUpButton" destination="4eu-XO-Fae" id="OKT-sq-4fz"/>
+                        <outlet property="signUpButton" destination="4eu-XO-Fae" id="3Cs-sC-izE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2uM-mR-hdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -426,7 +426,7 @@
         <!--NOTIFICATION BOARD-->
         <scene sceneID="NNC-JR-3XW">
             <objects>
-                <tableViewController id="4aR-gc-1Ti" customClass="HomeViewController" customModule="FollowLife" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="4aR-gc-1Ti" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PM9-Wd-3VQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1191,9 +1191,6 @@
                     <navigationItem key="navigationItem" title="APPOINTMENT DETAIL" id="gK7-DV-Qqv">
                         <barButtonItem key="backBarButtonItem" title="  " id="mlQ-7K-kr4"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="cancelAppointmentButton" destination="63V-wD-2yR" id="i8V-RX-huT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7s-Vj-hUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1713,6 +1710,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="PROFILE" id="AJU-jF-6PK">
                         <barButtonItem key="backBarButtonItem" title=" " id="EAy-Hx-N3t"/>
+                        <barButtonItem key="rightBarButtonItem" image="logout-icon" id="3ky-gY-EPn">
+                            <connections>
+                                <segue destination="4gq-mQ-sYr" kind="unwind" unwindAction="unwindToLoginWithSegue:" id="DEV-FN-UbN"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="ageTextField" destination="gOq-wT-Wxa" id="SrZ-V5-3n5"/>
@@ -1727,6 +1729,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hlx-pX-iTD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4gq-mQ-sYr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2556" y="1727.5862068965519"/>
         </scene>
@@ -2176,6 +2179,7 @@
         <image name="heart-icon" width="25" height="25"/>
         <image name="height-icon" width="25" height="25"/>
         <image name="hospital-icon" width="25" height="25"/>
+        <image name="logout-icon" width="25" height="25"/>
         <image name="question-icon" width="25" height="25"/>
         <image name="room-icon" width="25" height="25"/>
         <image name="settings-icon" width="25" height="25"/>
@@ -2183,5 +2187,8 @@
         <image name="user-icon" width="25" height="25"/>
         <image name="weight-icon" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="30x-vN-sVd"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
