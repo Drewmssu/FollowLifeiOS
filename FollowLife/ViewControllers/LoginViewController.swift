@@ -21,10 +21,21 @@ class LoginViewController: UIViewController {
         
         emailTextField.setBottomBorder()
         passwordTextField.setBottomBorder()
+        self.emailTextField.delegate = self
+        self.passwordTextField.delegate = self
         signInButton.layer.cornerRadius = 5
+     
     }
     
     @IBAction func signInAction(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: "token")
+        defaults.removeObject(forKey: "idPatient")
+        defaults.removeObject(forKey: "fullName")
+        defaults.removeObject(forKey: "email")
+        defaults.synchronize()
+        
+        
         guard let email = emailTextField.text, !email.isEmpty,
         let password = passwordTextField.text, !password.isEmpty else {
             let alert = UIAlertController(title: "We had a problem", message: "You must fill in all the fields.", preferredStyle: UIAlertControllerStyle.alert)
@@ -34,6 +45,7 @@ class LoginViewController: UIViewController {
             
             return
         }
+        
         let headers = ["Accept": "application/json"]
         let parameters = ["Email" : email, "Password": password, "DeviceToken": "String"]
         
@@ -48,15 +60,15 @@ class LoginViewController: UIViewController {
                 let jsonObject: JSON = JSON(value)
         
                 if statusCode == 200 {
+                
                     Preference.saveData(key: "token", value: jsonObject["Result"]["SessionToken"].stringValue)
                     let fullName = jsonObject["Result"]["FirstName"].stringValue + " " + jsonObject["Result"]["LastName"].stringValue
-                    print(jsonObject["Result"]["SessionToken"].stringValue)
-                    
                     Preference.saveData(key: "idPatient", value: jsonObject["Result"]["Id"].stringValue)
                     Preference.saveData(key: "fullName", value: fullName)
                     Preference.saveData(key: "email", value: jsonObject["Result"]["Email"].stringValue)
-                    Preference.saveData(key: "phoneNumber", value: jsonObject["Result"]["PhoneNumber"].stringValue)
-                   
+                    
+                    print(jsonObject["Result"]["SessionToken"].stringValue)
+                    
                     self.performSegue(withIdentifier: "showHomeScene", sender: self)
                 } else if statusCode == 401 ||  statusCode == 404 {
                     let incorrectCredentialAlert = UIAlertController(title: "Incorrect Credentials", message: jsonObject["Message"].stringValue, preferredStyle: UIAlertControllerStyle.alert)
@@ -89,4 +101,13 @@ extension UITextField {
         self.layer.shadowOpacity = 1.0
         self.layer.shadowRadius = 0.0
     }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField!) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
 }

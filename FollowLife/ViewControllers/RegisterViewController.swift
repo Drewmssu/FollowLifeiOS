@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+import FollowLifeFramework
 
 class RegisterViewController: UIViewController {
     @IBOutlet weak var firstNameTextField: UITextField!
@@ -22,6 +25,11 @@ class RegisterViewController: UIViewController {
         emailTextField.setBottomBorder()
         passwordTextField.setBottomBorder()
         signUpButton.layer.cornerRadius = 5
+        
+        self.firstNameTextField.delegate = self as! UITextFieldDelegate
+        self.lastNameTextField.delegate = self
+        self.emailTextField.delegate = self
+        self.passwordTextField.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,20 +37,58 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func signUpAction(_ sender: UIButton) {
+        
+        guard let firstname = firstNameTextField.text, firstname != "", let lastname = lastNameTextField.text, lastname != "", let email = emailTextField.text, email != "", let password = passwordTextField.text, password != "" else {
+            showErrorMessage()
+            return
+        }
+        
+        let headers = ["Accept": "application/json"]
+        let parameters = ["FirstName": firstname, "LastName": lastname, "Email" : email, "Password": password]
+        
+        Alamofire.request("\(FollowLifeApi.patientsUrl)/register", method: .post, parameters: parameters, encoding: URLEncoding.default, headers: headers).responseJSON { (response) in
+            let statusCode = response.response?.statusCode
+            
+            switch response.result {
+            case .failure(let error):
+                print("Error: \(error.localizedDescription)")
+                
+            case .success(let value):
+                let jsonObject: JSON = JSON(value)
+                
+                
+                if statusCode == 200 {
+                        print(jsonObject)
+                    
+                } else {
+                    let problemAlert = UIAlertController(title: "We had a problem", message: "We had some technical probles. Please, try again in a few minutes.", preferredStyle: UIAlertControllerStyle.alert)
+                    problemAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(problemAlert, animated: true, completion: nil)
+                }
+            }
+        }
+        
+        
+    }
     @IBAction func alreadyHaveAnAccountAction(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func showErrorMessage() {
+        let problemAlert = UIAlertController(title: "We had a problem", message: "Complete all the fields to proceed .", preferredStyle: UIAlertControllerStyle.alert)
+        problemAlert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(problemAlert, animated: true, completion: nil)
     }
-    */
 
 }
 
+extension RegisterViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField!) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+}
 
