@@ -123,7 +123,6 @@ class ProfileViewController: UIViewController {
     
     @IBAction func editSexAction(_ sender: UIButton) {
         self.sexTextField.isUserInteractionEnabled = true
-        
         self.sexTypePicker = UIPickerView(frame:CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 216))
         createPicker(textField: self.sexTextField, picker: self.sexTypePicker)
         self.sexTextField.becomeFirstResponder()
@@ -151,32 +150,35 @@ class ProfileViewController: UIViewController {
                 
                 let jsonObject: JSON = JSON(value)
                 if statusCode == 200 {
+                    print("load Paciente \(jsonObject)")
                     let bloodtype = jsonObject["Result"]["bloodType"].stringValue
                     let weight = jsonObject["Result"]["weight"].stringValue
                     let height = jsonObject["Result"]["height"].stringValue
                     let age = jsonObject["Result"]["age"].stringValue
                     let sex = jsonObject["Result"]["sex"].stringValue
                     
-                    guard bloodtype == "null" else {
+                    
+                    
+                    if bloodtype != "null" {
                         self.bloodTypeTextField.text = bloodtype
-                        return
                     }
-                    guard  weight == "null" else {
+                    
+                    if weight != "null" {
                         self.weightTextField.text = weight
-                        return
                     }
-                    guard height == "null" else {
+                        
+                    if height != "null" {
                         self.heightTextField.text = height
-                        return
                     }
-                    guard age == "null" else {
+                    
+                    if age != "null" {
                         self.ageTextField.text = age
-                        return
                     }
-                    guard sex == "null" else {
+                    
+                    if sex != "null" {
                         self.sexTextField.text = sex
-                        return
                     }
+                        
                     //                    self.editSpecialtyButton.isEnabled = false
                     //                    self.specialtyTextField.isUserInteractionEnabled = false
                     
@@ -205,9 +207,9 @@ class ProfileViewController: UIViewController {
             case .success(let value):
                 
                 let jsonObject: JSON = JSON(value)
-                print(statusCode    )
+     
                 if statusCode == 200 {
-                    print(jsonObject)
+                    print("update Paciente \(jsonObject)")
                     //                    self.editSpecialtyButton.isEnabled = false
                     //                    self.specialtyTextField.isUserInteractionEnabled = false
                     

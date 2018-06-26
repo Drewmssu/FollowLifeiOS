@@ -1712,6 +1712,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="EAy-Hx-N3t"/>
                         <barButtonItem key="rightBarButtonItem" image="logout-icon" id="3ky-gY-EPn">
                             <connections>
+                                <action selector="logOutAction:" destination="kYq-lf-TiY" id="TyF-L6-UTk"/>
                                 <segue destination="4gq-mQ-sYr" kind="unwind" unwindAction="unwindToLoginWithSegue:" id="DEV-FN-UbN"/>
                             </connections>
                         </barButtonItem>
