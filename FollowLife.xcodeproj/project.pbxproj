@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		28D189C420DCCD99006716FB /* ChooseAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D189C320DCCD99006716FB /* ChooseAddressViewModel.swift */; };
 		28D189CA20DCD796006716FB /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D189C920DCD796006716FB /* ProfileViewModel.swift */; };
+		28E2489520E25A4C0031379C /* DoctorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E2489420E25A4C0031379C /* DoctorsTableViewController.swift */; };
 		28E433D7208D234F00B2EBAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E433D6208D234F00B2EBAC /* AppDelegate.swift */; };
 		28E433DF208D234F00B2EBAC /* FollowLife.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28E433DD208D234F00B2EBAC /* FollowLife.xcdatamodeld */; };
 		28E433E1208D235000B2EBAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E433E0208D235000B2EBAC /* Assets.xcassets */; };
@@ -208,6 +209,7 @@
 /* Begin PBXFileReference section */
 		28D189C320DCCD99006716FB /* ChooseAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAddressViewModel.swift; sourceTree = "<group>"; };
 		28D189C920DCD796006716FB /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		28E2489420E25A4C0031379C /* DoctorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsTableViewController.swift; sourceTree = "<group>"; };
 		28E433D3208D234F00B2EBAC /* FollowLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FollowLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E433D6208D234F00B2EBAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28E433DE208D234F00B2EBAC /* FollowLife.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FollowLife.xcdatamodel; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 				4000D91320B7056E0061BBC9 /* ChooseRoleViewController.swift */,
 				4000D91420B7056E0061BBC9 /* CalendarTableViewController.swift */,
 				4000D90B20B7056D0061BBC9 /* ProfileViewController.swift */,
+				28E2489420E25A4C0031379C /* DoctorsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -687,6 +690,7 @@
 				4000D91A20B7056E0061BBC9 /* ProfileViewController.swift in Sources */,
 				4000D92020B7056E0061BBC9 /* LoginViewController.swift in Sources */,
 				28E4340E208D34AD00B2EBAC /* LoginViewModel.swift in Sources */,
+				28E2489520E25A4C0031379C /* DoctorsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
