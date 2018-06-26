@@ -21,11 +21,11 @@ public class IndicatorType {
         self.code = ""
     }
     
-    public init(id: Int, unitOfMeasurementId: Int, name: String, code: String) {
+    public init(id: Int, unitOfMeasurementId: Int, name: String, code: String?) {
         self.id = id
         self.unitOfMeasurementId = unitOfMeasurementId
         self.name = name
-        self.code = code
+        self.code = (code == nil) ? "" : code!
     }
     
     public convenience init(from jsonObject: JSON) {

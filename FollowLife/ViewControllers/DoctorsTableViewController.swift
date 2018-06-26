@@ -11,11 +11,28 @@ import Alamofire
 import SwiftyJSON
 import FollowLifeFramework
 
+class DoctorsTableViewCell: UITableViewCell {
+    
+    var id: Int = 0
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    
+    public func setValues(fromPatient doctor: User) {
+        self.id = doctor.id
+        self.nameLabel.text = "\(doctor.firstName) \(doctor.lastName)"
+    }
+    
+    public func setValues(fromName doctorName: String) {
+        nameLabel.text = doctorName
+    }
+}
+
 class DoctorsTableViewController: UITableViewController {
 
     
     let token: String = Preference.retreiveData(key: "token")
     let idPatient: String = Preference.retreiveData(key: "idPatient")
+    var users: [User] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +42,7 @@ class DoctorsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.updateViews()
     }
 
     @IBAction func addAction(_ sender: UIBarButtonItem) {
@@ -103,23 +121,56 @@ class DoctorsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return users.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DoctorCell", for: indexPath) as! DoctorsTableViewCell
 
-        // Configure the cell...
+        let user = self.users[indexPath.row]
+        
+        cell.setValues(fromPatient: user)
 
         return cell
     }
-    */
+    
+    func updateViews() {
+        let headers = [
+            "X-FLLWLF-TOKEN": self.token,
+            "Accept": "application/json"
+        ]
+        Alamofire.request("\(FollowLifeApi.patientsUrl)/\(self.idPatient)/doctors", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers)
+            .responseJSON { (response) in
+                let statusCode = response.response?.statusCode
+                
+                switch response.result {
+                case .failure( _):
+                    self.showErrorMessage()
+                    
+                case .success(let value):
+                    let jsonObject = JSON(value)["Result"].arrayValue
+                    
+                    if statusCode == 200 {
+                        for i in 0..<jsonObject.count {
+                            self.users.append(User.init(id: jsonObject[i]["id"].intValue,
+                                                        sessionToken: nil,
+                                                        firstName: jsonObject[i]["name"].stringValue,
+                                                        lastName: "",
+                                                        email: "",
+                                                        profileImage: nil,
+                                                        phoneNumber: nil))
+                            
+                            self.tableView?.reloadData()
+                        }
+                    }
+                }
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

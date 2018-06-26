@@ -22,13 +22,25 @@ public class Preference {
     }
     
     public static func retreiveData(key: String) -> String {
-        let value: String = preferences.string(forKey: key)!
+        let value: String
+        
+        if preferences.string(forKey: key) != nil {
+            value = preferences.string(forKey: key)!
+        } else {
+            value = ""
+        }
         
         return value
     }
     
     public static func retreiveData(key: String) -> Int {
-        let value: Int = preferences.integer(forKey: key)
+        let value: Int
+        
+        if preferences.integer(forKey: key) != nil {
+            value = preferences.integer(forKey: key)
+        } else {
+            value = 0
+        }
         
         return value
     }

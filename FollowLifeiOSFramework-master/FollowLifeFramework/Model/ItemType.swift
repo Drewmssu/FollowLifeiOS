@@ -27,8 +27,8 @@ public class ItemType {
     
     public convenience init(from jsonObject: JSON) {
         self.init(id: jsonObject["id"].intValue,
-                  name: jsonObject["name"].stringValue,
-                  code: jsonObject["code"].stringValue)
+                  name: jsonObject["Text"].stringValue,
+                  code: jsonObject["Code"].stringValue)
     }
     
     public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [ItemType] {

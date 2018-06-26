@@ -67,7 +67,7 @@ class RegisterViewController: UIViewController {
                     
                     
                         //print(jsonObject)
-                      // self.performSegue(withIdentifier: "showHomeScene", sender: self)
+                    self.performSegue(withIdentifier: "showHomeScene", sender: self)
                     
                 } else if statusCode == 400 {
                     let incorrectCredentialAlert = UIAlertController(title: "Existing User", message: jsonObject["Message"].stringValue, preferredStyle: UIAlertControllerStyle.alert)

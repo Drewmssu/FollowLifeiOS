@@ -27,21 +27,21 @@ public class Indicator {
         self.frequency = ""
     }
     
-    public init(id: Int, patientId: Int, unitOfMeasurementId: Int, quantity: Float, createdAt: Date, indicatorTypeId: Int, frequency: String) {
+    public init(id: Int, patientId: Int, unitOfMeasurementId: Int?, quantity: Float?, createdAt: Date, indicatorTypeId: Int, frequency: String) {
         self.id = id
         self.patientId = patientId
-        self.unitOfMeasurementId = unitOfMeasurementId
-        self.quantity = quantity
+        self.unitOfMeasurementId = (unitOfMeasurementId == nil) ? 0 : unitOfMeasurementId!
+        self.quantity = (quantity == nil) ? Float("0.0000")! : quantity!
         self.createdAt = Utils.convertTime(from: createdAt)
         self.indicatorTypeId = indicatorTypeId
         self.frequency = frequency
     }
     
-    public init(id: Int, patientId: Int, unitOfMeasurementId: Int, quantity: Float, createdAt: String, indicatorTypeId: Int, frequency: String) {
+    public init(id: Int, patientId: Int, unitOfMeasurementId: Int?, quantity: Float?, createdAt: String, indicatorTypeId: Int, frequency: String) {
         self.id = id
         self.patientId = patientId
-        self.unitOfMeasurementId = unitOfMeasurementId
-        self.quantity = quantity
+        self.unitOfMeasurementId = (unitOfMeasurementId == nil) ? 0 : unitOfMeasurementId!
+        self.quantity = (quantity == nil) ? Float("0.0000")! : quantity!
         self.createdAt = createdAt
         self.indicatorTypeId = indicatorTypeId
         self.frequency = frequency
